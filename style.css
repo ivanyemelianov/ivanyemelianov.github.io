@@ -23,10 +23,16 @@ header {
 .descr {
     /*padding: 50px 250px 0px 250px;*/
     font-size: 20px;
+    padding: 30px 10px;
+}
+
+.column-title {
+    font-weight: 700;
 }
 
 .post {
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 50px;
     /*padding: 0 250px;*/
 }
 
@@ -50,6 +56,11 @@ header {
     margin-right: 10px;
     padding: 3px;
     background-color: rgb(174, 174, 174);
+}
+
+.project-post img {
+    height: 100px;
+    width: 100px;
 }
 
 footer {
