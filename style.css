@@ -15,6 +15,11 @@ header {
     border: 1px solid #000;
 }
 
+.logo h2 a {
+    color: #000;
+    text-decoration: none;
+}
+
 .main {
     min-height: 75vh;
     font-family: 'Anonymous Pro', monospace;
@@ -61,6 +66,20 @@ header {
 .project-post img {
     height: 100px;
     width: 100px;
+}
+
+.single-post {
+    padding: 50px 0;
+}
+
+.project-links {
+    margin: 15px 0;
+}
+
+.project-links a {
+    color: #000;
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 footer {
