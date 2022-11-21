@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.PNG">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="logo">
+                        <h2><a href="../index.html"><span>c</span>omplete</a></h2>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="socials">
+                        <a href="https://github.com/ivanyemelianov/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="sections">
+                    <button class="accordion">1. Output to Console, Alert and Comments</button>
+                    <div class="panel">
+                        <code>
+                            console.log("Hello world!"); <br>
+                            window.alert("Hey world!"); <br>
+                            //This is Comments 
+                            <br>
+                            /* <br>
+                                Multiline <br>
+                                comment <br>
+                            */
+                        </code>
+                    </div>
+                    
+                    <button class="accordion">2. Variables</button>
+                    <div class="panel">
+                        <p>
+                            A variable is a container for storing <br>
+                            A variable behaves as if it was the value that it contains <br>
+                            <br>
+                            Two steps: <br>
+                            1. Declaration (var, let, const) <br>
+                            2. Assignment (= assignment operator)
+                        </p>
+                        <code>
+                            let age; // If not assigned, data type "undefined" <br>
+                            age = 21; // Type "number" <br>
+                            <br>
+                            let firstName = "John"; // Type "string" <br>
+                            let student = false; // Type "booleans" <br>
+                            <br>
+                            //Output variables to console <br>
+                            console.log("Data: " + age, firstName, student); <br>
+                            <br>
+                            //Changing inner html of the paragraph tag with id "data"<br>
+                            document.getElementById("data").innerHTML = "Data: " + age + " " + firstName + " " + student;<br>
+                        </code>
+                    </div>
+                    
+                    <button class="accordion">3. Arithmetic operations</button>
+                    <div class="panel">
+                        <code>
+                            let students = 20; <br>
+                            <br>
+                            /*<br>
+                            students = students + 1;<br>
+                            students = students - 1;<br>
+                            students = students * 2;<br>
+                            students = students / 2;<br>
+                            <br>
+                            studens += 1;<br>
+                            studens -= 1;<br>
+                            studens *= 2;<br>
+                            studens /= 2;<br>
+                            */<br>
+                            <br>
+                            let extraStudents = students % 3; // % opeartor gives the remainder of a devision<br>
+                            let oddOrEven = studnts % 2; // if 1 then odd, if 0 then even<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">4. Accepting User Input</button>
+                    <div class="panel">
+                        <code>
+                            // With window prompt <br>
+                            let username = window.prompt("What's your name?"); <br>
+                            <br>
+                            // With html textbox<br>
+                            let firstname;<br>
+                            document.getElementById("myButton").onClick = function(){<br>
+                            &emsp;firstname = document.getElementById("myText");<br>
+                            &emsp;console.log(firstname);<br>
+                            }<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">5. Type conversion</button>
+                    <div class="panel">
+                        <code>
+                            let age = window.prompt("What's your age?"); <br>
+                            <br>
+                            console.log(typeof age);<br>
+                            age = Number(age); // String(), Boolean()<br>
+                            console.log(typeof age);<br>
+                            age += 1;<br>
+                            <br>
+                            console.log("Happy bday! You are ", age, "years old.");<br>
+                        </code>
+                    </div> 
+                    
+                    <button class="accordion">section</button>
+                    <div class="panel">
+                        <code>
+                            
+                        </code>
+                    </div> 
+
+                    <button class="accordion">section</button>
+                    <div class="panel">
+                        <code>
+                            
+                        </code>
+                    </div> 
+
+                    <button class="accordion">section</button>
+                    <div class="panel">
+                        <code>
+                            
+                        </code>
+                    </div> 
+
+                    <button class="accordion">section</button>
+                    <div class="panel">
+                        <code>
+                            
+                        </code>
+                    </div> 
+
+                    <button class="accordion">section</button>
+                    <div class="panel">
+                        <code>
+                            
+                        </code>
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>Complete | 2022</p>
+        </div>     
+    </footer>
+    
+</body>
+</html>
