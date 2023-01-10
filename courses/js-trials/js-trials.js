@@ -1,8 +1,7 @@
-let age = window.prompt("What's your age?");
+let userName;
 
-console.log(typeof age);
-age = Number(age);
-console.log(typeof age);
-age += 1;
+do{
+    userName = window.prompt("Enter your name");
+}while(userName == "")
 
-console.log("Happy bday! You are ", age, "years old.");
+console.log("Hello", userName);

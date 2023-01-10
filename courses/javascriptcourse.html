@@ -127,40 +127,234 @@
                         </code>
                     </div> 
                     
+                    <button class="accordion">6. Constants</button>
+                    <div class="panel">
+                        <code>
+                            // const = a variable that can't be changed <br>
+                            <br>
+                            const PI = 3.14159;<br>
+                            let radius;<br>
+                            let circumference;<br>
+                            <br>
+                            radius = window.prompt('Enter the radius of a circle');<br>
+                            radius = Number(radius);<br>
+                            <br>
+                            circumference = 2 * PI * radius;<br>
+                            <br>
+                            console.log("The circumference is:", circumference);<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">7. Math module</button>
+                    <div class="panel">
+                        <code>
+                            let x = 3.14; <br>
+                            let y = 5;<br>
+                            let z = 9;<br>
+                            let max;<br>
+                            let min;<br>
+                            <br>
+                            x = Math.round(x);<br>
+                            x = Math.floor(x);<br>
+                            x = Math.ciel(x);<br>
+                            x = Math.pow(x, 2);<br>
+                            x = Math.ciel(x);<br>
+                            x = Math.sqrt(x);<br>
+                            x = Math.abs(x);<br>
+                            min = Math.min(x, y, z);<br>
+                            min = Math.max(x, y, z);<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">8. Random number</button>
+                    <div class="panel">
+                        <code>
+                            let x = Math.floor(Math.random() * 6) + 1;
+                        </code>
+                    </div> 
+
+                    <button class="accordion">9. Useful string properties</button>
+                    <div class="panel">
+                        <code>
+                            let userName = "John Johnson"; <br>
+                            <br>
+                            let userNameLength = userName.length;<br>
+                            let firstLetter = userName.charAt(0);<br>
+                            userName.indexOf("o");<br>
+                            userName.lastIndexOf("o");<br>
+                            userName.trim(); // removes spaces around<br>
+                            userName.toUpperCase();<br>
+                            userName.toLowerCase();<br>
+                            userName.replaceAll("J", "");<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">10. Slice() method</button>
+                    <div class="panel">
+                        <p>
+                            Methond slice() extracts a section of a string and returns it as a new string, without modifying the original string.
+                        </p>
+                        <code>
+                            let fullName = "John Johnson"; <br>
+                            let firstName; <br>
+                            let lastName; <br>
+                            <br>
+                            firstName = fullName.slice(0, 4); <br>
+                            lastName = fullName.slice(5); <br>
+                            <br>
+                            lastName = fullName.slice(0, fullName.indexOf(" ")); <br>
+                            lastName = fullName.slice(fullName.indexOf(" ") + 1); <br>
+                            <br>
+                            console.log(firstName);<br>
+                            console.log(lastName);<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">11. Method Chaining</button>
+                    <div class="panel">
+                        <code>
+                            let userName = "name";<br>
+                            let letter = userName.charAt(0).toUpperCase().trim();<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">12. IF Statement</button>
+                    <div class="panel">
+                        <code>
+                            let age = 21;<br>
+                            <br>
+                            if(age >= 18) {<br>
+                            &emsp;console.log('You are an adult!');<br>
+                            }<br>
+                            else if(age < 0) {<br>
+                            &emsp;console.log('You are not born yet!');<br>
+                            }<br>
+                            else{<br>
+                            &emsp;console.log('You are an child!');<br>
+                            }<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">13. Checked Property</button>
+                    <div class="panel">
+                        <p>
+                            In hmtl create a submit button and a checkbox.
+                            Same property would work with radio buttons.
+                        </p>
+                        <code>
+                            document.getElementById('myButton').onclick = function(){<br>
+                            &emsp;const myCheckBox = document.getElementById('myCheckBox');<br>
+                            &emsp;if(myCheckBox.checked){<br>
+                            &emsp;&emsp;console.log("You are subscribed");<br>
+                            &emsp;}<br>
+                            &emsp;else {<br>
+                            &emsp;&emsp;console.log("You are NOT subscribed");<br>
+                            &emsp;}<br>
+                            }<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">14. Switch Statement</button>
+                    <div class="panel">
+                        <code>
+                            let grade = 'A';<br>
+                            <br>
+                            switch(grade){<br>
+                            &emsp;case 'A':<br>
+                            &emsp;&emsp;console.log("You did great!");<br>
+                            &emsp;&emsp;break;<br>
+                            &emsp;case 'B':<br>
+                            &emsp;&emsp;console.log("You did good!");<br>
+                            &emsp;&emsp;break;<br>
+                            &emsp;case 'C':<br>
+                            &emsp;&emsp;console.log("You did okay!");<br>
+                            &emsp;&emsp;break;<br>
+                            &emsp;case 'D':<br>
+                            &emsp;&emsp;console.log("You passed... barely!");<br>
+                            &emsp;&emsp;break;<br>
+                            &emsp;case 'F':<br>
+                            &emsp;&emsp;console.log("You FAILED!");<br>
+                            &emsp;&emsp;break;<br>
+                            &emsp;default:<br>
+                            &emsp;&emsp;console.log(grade, "is not a letter grade!");<br>
+                            }<br>
+                        </code>
+                    </div> 
+
+                    <button class="accordion">15. AND and OR</button>
+                    <div class="panel">
+                        <p>
+                            && is AND (Both conditions must be true)
+                            || is OR (Either conditions can be true)
+                        </p>
+                        <code>
+                            
+                        </code>
+                    </div> 
+
+                    <button class="accordion">16. NOT</button>
+                    <div class="panel">
+                        <p>
+                            ! is NOT (Used to reverse a condition's bolean value)
+                        </p>
+                        <code>
+                            
+                        </code>
+                    </div> 
+
+                    <button class="accordion">17. While and Do While Loop</button>
+                    <div class="panel">
+                        <code>
+                            let running = true;<br>
+                            <br>
+                            while(running) {<br>
+                            &emsp;..do somthing<br>
+                            }<br>
+                            <br>
+                            let userName;<br>
+                            <br>
+                            do{<br>
+                            &emsp;userName = window.prompt("Enter your name");<br>
+                            }while(userName == "")<br>
+                            <br>
+                            console.log("Hello", userName);<br>
+                        </code>
+                    </div>
+                    
                     <button class="accordion">section</button>
                     <div class="panel">
                         <code>
                             
                         </code>
-                    </div> 
+                    </div>
 
                     <button class="accordion">section</button>
                     <div class="panel">
                         <code>
                             
                         </code>
-                    </div> 
+                    </div>
 
                     <button class="accordion">section</button>
                     <div class="panel">
                         <code>
                             
                         </code>
-                    </div> 
+                    </div>
 
                     <button class="accordion">section</button>
                     <div class="panel">
                         <code>
                             
                         </code>
-                    </div> 
+                    </div>
 
                     <button class="accordion">section</button>
                     <div class="panel">
                         <code>
                             
                         </code>
-                    </div> 
+                    </div>
 
                 </div>
             </div>
