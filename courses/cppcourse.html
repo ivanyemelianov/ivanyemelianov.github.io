@@ -37,38 +37,188 @@
         <div class="container">
             <div class="row">
                 <div class="sections">
-                    <button class="accordion">section</button>
+                    <button class="accordion">1. Function Basics</button>
                     <div class="panel">
                         <code>
-                            
+                            //Declaration<br>
+                            int Add(int num1, int num2);<br>
+                            <br>
+                            int GiveMeFive()<br>
+                            {<br>
+                            &emsp;return 50;<br>
+                            }<br>
+                            <br>
+                            void GiveMeNothing()<br>
+                            {<br>
+                            &emsp;return;<br>
+                            }<br>
+                            <br>
+                            void GiveMeNothingToo()<br>
+                            {<br>
+                                &emsp;//Empty<br>
+                            }<br>
+                            <br>
+                            int MultiplyByTwo(int number)<br>
+                            {<br>
+                                &emsp;return Add(number, 2);<br>
+                            }<br>
+                            <br>
+                            //Initialization<br>
+                            int Add(int num1, int num2)<br>
+                            {<br>
+                                &emsp;return num1 + num2;<br>
+                            }<br>
+                            <br>
+                            int main()<br>
+                            {<br>
+                                &emsp;GiveMeFive();<br>
+                                &emsp;GiveMeNothing();<br>
+                                &emsp;GiveMeNothingToo();<br>
+                                <br>
+                                &emsp;int result = MultiplyByTwo(22);<br>
+                                &emsp;int sum = Add(3, 4);<br>
+                            }<br>
                         </code>
                     </div>
 
-                    <button class="accordion">section</button>
+                    <button class="accordion">2. Build process</button>
+                    <div class="panel">
+                        <p>
+                            Preprocessor --> Compiler --> Linker<br>
+                            <br>
+                            Preprocessor<br>
+                            - Executes all #'s<br>
+                            - Results into a translation unit with all the includes pasted in<br>
+                            <br>
+                            Compiler<br>
+                            - Checks syntax<br>
+                            - Creates .obj files from all .cpp files<br>
+                            - Object files are translations of code to machine language<br>
+                            <br>
+                            Linker<br>
+                            - Combines all .obj files into a single .exe file<br>
+                            - Finds all unresolved symbols and replaces with their definitions<br>
+                        </p>
+                    </div>
+
+                    <button class="accordion">3. Preprocessor</button>
                     <div class="panel">
                         <code>
+                            #include <iostream> <br>
+                            #include "IncludeMe.h"<br>
+                            <br>
+                            #define PI 3.1459<br>
+                            #define IS_SOMETHING false<br>
+                            <br>
+                            //Macros<br>
+                            #define MULTIPLY(A, B) ((A) * (B))<br>
                             
+                            <br>
+                            int main()<br>
+                            {<br>
+                            // Is IS_SOMETHING != 0<br>
+                            #if IS_SOMETHING<br>
+                            &emsp;std::cout << "Is Something" << std::endl;<br>
+                            #else<br>
+                            &emsp;std::cout << "Is Not Something" << std::endl;<br>
+                            #endif<br>
+                            <br>
+                            // Was IS_SOMETHING defined at all<br>
+                            #ifdef IS_SOMETHING<br>
+                            &emsp;std::cout << "Is Something Defined" << std::endl;<br>
+                            #endif<br>
+                            <br>
+                            &emsp;//Macros<br>
+                            &emsp;int x = 2;<br>
+                            &emsp;int y = 3;<br>
+                            &emsp;int z = MULTIPLY(x + 2, y + 1);<br>
+                            <br>
+                            }<br>
                         </code>
                     </div>
 
-                    <button class="accordion">section</button>
+                    <button class="accordion">4. Namespaces</button>
                     <div class="panel">
                         <code>
-                            
+                            #include <iostream><br>
+                                <br>
+                            namespace Name<br>
+                            {<br>
+                                &emsp;void Print()<br>
+                                &emsp;{<br>
+                                    &emsp;&emsp;std::cout << "Print Name" << std::endl;<br>
+                                    &emsp;}<br>
+                            }<br>
+                            <br>
+                            namespace SecondName<br>
+                            {<br>
+                                &emsp;void Print()<br>
+                                &emsp;{<br>
+                                    &emsp;&emsp;std::cout << "Print Second Name" << std::endl;<br>
+                                    &emsp;}<br>
+                            }<br>
+                            <br>
+                            int main()<br>
+                            {<br>
+                                &emsp;Name::Print();<br>
+                                &emsp;SecondName::Print();<br>
+                            }<br>
                         </code>
                     </div>
 
-                    <button class="accordion">section</button>
+                    <button class="accordion">5. Variables</button>
                     <div class="panel">
                         <code>
-                            
-                        </code>
-                    </div>
-
-                    <button class="accordion">section</button>
-                    <div class="panel">
-                        <code>
-                            
+                            #include <iostream><br>
+                            #include <string><br>
+                                <br>
+                            void Integers();<br>
+                            void Strings();<br>
+                            void Booleans();<br>
+                            <br>
+                            <br>
+                            int main()<br>
+                            {<br>
+                                &emsp;Integers();<br>
+                                &emsp;Strings();<br>
+                                &emsp;Booleans();<br>
+                            }<br>
+                            <br>
+                            <br>
+                            void Integers()<br>
+                            {<br>
+                                &emsp;int a = 5; //4 Bytes<br>
+                            <br>
+                            &emsp;//Declaration<br>
+                            &emsp;int number0;       // Memory not initialized, can store anything<br>
+                            &emsp;int number1 = 1;   // Correct way<br>
+                            <br>
+                            &emsp;const int CONST_NUMBER = 24;<br>
+                            <br>
+                            &emsp;double b = 0.12123232;<br>
+                            &emsp;float c = 12.04f;<br>
+                            &emsp;unsigned int d = 2; // minimum 0<br>
+                            }<br>
+                            <br>
+                            <br>
+                            void Strings()<br>
+                            {<br>
+                                &emsp;char u = 'u';<br>
+                                &emsp;std::string string1 = "";<br>
+                                &emsp;std::string string2 = "Something";<br>
+                            <br>
+                            &emsp;std::string string3 = string1 + " - " + string2;<br>
+                            }<br>
+                            <br>
+                            void Booleans()<br>
+                            {<br>
+                                &emsp;bool isSomething = false;<br>
+                                &emsp;bool isNotSomething = true;<br>
+                            <br>
+                            &emsp;//Boolean operators <, >, <=, >=, ==, !=<br>
+                            }<br>
+                                
+                                
                         </code>
                     </div>
 
