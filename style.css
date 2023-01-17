@@ -4,6 +4,15 @@ header {
     border-bottom: 1px rgb(226, 226, 226) solid;
 }
 
+code {
+    white-space: pre-wrap;
+}
+
+.panel p {
+    padding-top: 20px;
+    margin: 0;
+}
+
 .logo {
     font-family: 'Share Tech Mono', monospace;
     /*padding: 0 250px;*/
