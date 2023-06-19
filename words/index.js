@@ -50,7 +50,7 @@ function loseWinCheck() {
 
 function compareWords() {
     // Get the input word and the word to compare it to
-    let inputWord = document.getElementById("inputWord").value;
+    let inputWord = document.getElementById("inputWord").value.toLowerCase();
     let compareWord = dict.get(randomWord);
 
     // Compare the input word to the word to compare it to
