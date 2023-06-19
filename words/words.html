@@ -10,15 +10,15 @@
     <title>Wordies</title>
 </head>
 <body>
-    <div>Word: <span id="word"></span></div>
-    <form>
-		<label for="inputWord">Translate:</label>
+    <div class="element">Word: <span id="word"></span></div>
+    <form class="element input">
+		<label for="inputWord"></label>
 		<input type="text" id="inputWord" name="inputWord"><br>
 		<button type="button" onclick="compareWords()">Compare</button>
 	</form>
-    <div id="result"></div>
-    <button class="next" onclick="nextWord()">Next</button>
-    <div id="hp">3</div>
-    <div id="lw"></div>
+    <div class="element" id="result"></div>
+    <div class="element"><button class="next" onclick="nextWord()">Next</button></div>
+    <div class="element">Lives: <span id="hp">3</span></div>
+    <div class="element">Words: <span id="lw">0</span></div>
 </body>
 </html>
