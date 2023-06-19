@@ -347,10 +347,46 @@ for (let i = 1; i <= 20; i+=1) {<br>
 </code>
 </div>
 
-<button class="accordion">section</button>
+<button class="accordion">20. Functions</button>
 <div class="panel">
 <code>
+function add(a, b) {
+    return a + b;
+}
 
+let sum = add(3, 4);
+console.log(sum); // Output: 7
+
+let multiply = (a, b) => a * b;
+console.log(multiply(3,4)); // Output: 12   
+</code>
+</div>
+
+<button class="accordion">21. Var vs Let</button>
+<div class="panel">
+<p>
+var is function-scoped, which means that a variable declared with var is accessible within the entire <br>
+function in which it is defined, as well as any nested functions.<br>
+<br>
+let is block-scoped, which means that a variable declared with let is only accessible within the block <br>
+in which it is defined, as well as any nested blocks.<br>
+</p>
+</div>
+
+<button class="accordion">22. Template literals</button>
+<div class="panel">
+<code>
+    let name = "John";
+    console.log(`Hello, ${name}!`);    
+</code>
+</div>
+
+<button class="accordion">23. ToLocaleString()</button>
+<div class="panel">
+<code>
+    let number = 12345.678;
+    let formattedNumber = number.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    console.log(formattedNumber);    
 </code>
 </div>
 

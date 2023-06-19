@@ -52,8 +52,73 @@
                             <a href="https://github.com/ivanyemelianov/beargorand"><i class="fa-brands fa-github"></i></a>
                         </div>
                         <p class="descr">
-                            Wordpress theme created for a NFT collection called Beargorand.                        
+                            Wordpress theme created for a NFT collection called Beargorand.<br>
+                            <br>
+                            This WordPress theme for NFT collections is built using the Underscores theme template, and is designed specifically for showcasing and managing non-fungible token (NFT) collections.<br>
+                            <br>
+                            The theme features advanced filtering capabilities, allowing users to easily browse and search for specific NFTs based on various attributes such as rarity or NFT image features like background color, facial expresion, accesories, and more.<br> 
+                            <br>
+                            Additionally, the theme is fully responsive and optimized for fast loading and easy navigation, making it the perfect choice for anyone looking to create a professional and functional website for their NFT collection.                        
                         </p>
+                        <p>Main feature of this project is an advance filter system made in php</p>
+                        <code>
+&lt;form method="GET"&gt;
+    &lt;div class="accordion"&gt;Backgrounds&lt;/div&gt;
+    &lt;div class="panel"&gt;
+        &lt;ul&gt;
+            &lt;?php
+            $categories=get_categories(
+                array( 'parent' =&gt; 3 )
+            );
+            
+            foreach ($categories as $c) {
+                ?&gt;
+                &lt;li&gt;
+                &lt;input id="&lt;?php echo $c-&gt;cat_name; ?&gt;" type="checkbox" name="background[]" value="&lt;?php echo $c-&gt;cat_ID; ?&gt;"
+                &lt;?php checked(
+                    (isset($_GET['background']) && in_array($c-&gt;cat_ID, $_GET['background']))
+                );
+                ?&gt;
+                /&gt;
+                &lt;label for="&lt;?php echo $c-&gt;cat_name; ?&gt;"&gt;&lt;?php echo $c-&gt;cat_name; ?&gt;&lt;/label&gt;
+                &lt;/li&gt;
+                &lt;?php
+            }
+            ?&gt;
+        &lt;/ul&gt;		
+    &lt;/div&gt;
+&lt;/form&gt;
+                        </code>
+
+                        <code>
+if($_GET['background'])
+{
+    $background = $_GET['background'];
+    $bg_types = implode( ',', $background );	
+}
+                        </code>
+
+                        <code>
+&lt;?php&gt;
+    $args = array(
+        'post_type' =&gt; 'post',
+        'posts_per_page' =&gt; -1,
+        'order' =&gt; 'ASC',
+        'cat' =&gt; array( $bg_types, $eye_types, $glasses_types, $rings_types, $expressions_types, $necklaces_types, $tops_types, $bottoms_types, $hats_types, $earings_types, $paws_types )
+    );
+
+    $query = new WP_Query($args);
+
+    while($query-&gt;have_posts()) : $query-&gt;the_post();
+?&gt;
+    &lt;div class="col-4"&gt;
+        &lt;div class="bear-wrapper"&gt;
+            &lt;div class="bear-img"&gt;&lt;?php beargorand_post_thumbnail(); ?&gt;&lt;/div&gt;
+            &lt;div class="bear-id"&gt;&lt;?php the_title(); ?&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;?php endwhile; wp_reset_query();?&gt;
+                        </code>
                     </div>
                 </div>
             </div>
