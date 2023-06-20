@@ -8,6 +8,10 @@ let resultEl = document.getElementById("result");
 let wordEl = document.getElementById("word");
 let hpEl = document.getElementById("hp");
 let lwEl = document.getElementById("lw");
+let wordWrapper = document.getElementById("word-wrapper");
+let input = document.getElementById("input");
+let inputWord = document.getElementById("inputWord");
+let nextWrapper = document.getElementById("nextWrapper");
 let randomWord = getRandomKeyFromMap(dict);
 
 document.addEventListener('DOMContentLoaded', changeWord());
@@ -25,6 +29,12 @@ function changeWord() {
 function nextWord() {
     randomWord = getRandomKeyFromMap(dict);
     wordEl.innerHTML = randomWord;
+    wordWrapper.style.display = "block";
+    input.style.display = "block";
+    nextWrapper.style.display = "none";
+    inputWord.value = "";
+    resultEl.innerHTML = "";
+
 }
 
 function loseWinCheck() {
@@ -64,6 +74,11 @@ function compareWords() {
 
     wordCount++; 
     lwEl.innerHTML = wordCount;
+
+    wordWrapper.style.display = "none";
+    input.style.display = "none";
+    nextWrapper.style.display = "block";
+
 
     loseWinCheck();
 }

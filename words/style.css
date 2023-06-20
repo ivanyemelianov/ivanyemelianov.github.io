@@ -10,3 +10,7 @@ body {
 .element {
     padding-bottom: 20px;
 }
+
+#nextWrapper {
+    display: none;
+}

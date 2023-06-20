@@ -10,14 +10,14 @@
     <title>Wordies</title>
 </head>
 <body>
-    <div class="element">Word: <span id="word"></span></div>
-    <form class="element input">
+    <div class="element" id="word-wrapper">Word: <span id="word"></span></div>
+    <form class="element input" id="input">
 		<label for="inputWord"></label>
 		<input type="text" id="inputWord" name="inputWord"><br>
 		<button type="button" onclick="compareWords()">Compare</button>
 	</form>
     <div class="element" id="result"></div>
-    <div class="element"><button class="next" onclick="nextWord()">Next</button></div>
+    <div class="element" id="nextWrapper"><button class="next" onclick="nextWord()">Next</button></div>
     <div class="element">Lives: <span id="hp">3</span></div>
     <div class="element">Words: <span id="lw">0</span></div>
 </body>
