@@ -1,9 +1,7 @@
-let incorrect = 0;
 let hp = 3;
 let wordCount = 0;
 
-
-// Get the result field
+// Get the elements
 let resultEl = document.getElementById("result");
 let wordEl = document.getElementById("word");
 let hpEl = document.getElementById("hp");
@@ -14,18 +12,20 @@ let inputWord = document.getElementById("inputWord");
 let nextWrapper = document.getElementById("nextWrapper");
 let randomWord = getRandomKeyFromMap(dict);
 
+//On page load
 document.addEventListener('DOMContentLoaded', changeWord());
 
+//Display result
 function changeResult(result) {
-    // Change the inner HTML text
     resultEl.innerHTML = result;
 }
 
+//Change word
 function changeWord() {
-    // Change the inner HTML text
     wordEl.innerHTML = randomWord;
 }
 
+//Display next word
 function nextWord() {
     randomWord = getRandomKeyFromMap(dict);
     wordEl.innerHTML = randomWord;
@@ -37,6 +37,7 @@ function nextWord() {
 
 }
 
+//Lose win check
 function loseWinCheck() {
     if (hp <= 0)
     {
@@ -58,6 +59,7 @@ function loseWinCheck() {
     }
 }
 
+//Compare words
 function compareWords() {
     // Get the input word and the word to compare it to
     let inputWord = document.getElementById("inputWord").value.toLowerCase();
