@@ -54,8 +54,14 @@ body {
     outline: none;
 }
 
-.element {
-    padding-bottom: 20px;
+.result {
+    font-size: 3em;
+}
+
+.nextBtn > button {
+    margin-top: 40px;
+    padding: 10px 10px;
+    border-radius: 10px;
 }
 
 #nextWrapper {
