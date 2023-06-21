@@ -66,7 +66,7 @@ function compareWords() {
     let compareWord = dict.get(randomWord);
 
     // Compare the input word to the word to compare it to
-    if (inputWord == compareWord) {
+    if (inputWord === compareWord) {
         changeResult("Correct!");
     } else {
         changeResult(compareWord);
