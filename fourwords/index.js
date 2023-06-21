@@ -58,7 +58,7 @@ function loseWinCheck() {
           window.location.reload();
         }
     }
-    if (wordCount >= 10)
+    if (wordCount === 21)
     {
         const result = window.confirm("You won");
       
