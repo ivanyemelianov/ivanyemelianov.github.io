@@ -26,6 +26,7 @@ function changeResult(result) {
 
 function nextSentence() {
     randomSent = getRandomKeyFromMap(dict);
+    transEl.innerHTML = randomSent;
     splitToButtons(dict.get(randomSent));
     transEl.style.display = "block";
     sentenceContainer.style.display = "block";
