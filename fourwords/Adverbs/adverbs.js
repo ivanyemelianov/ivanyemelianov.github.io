@@ -1,4 +1,4 @@
-const frenchAdverbs = new Map([
+const dict = new Map([
   ['aussi', 'also/too'],
   ['bien', 'well'],
   ['très', 'very'],
