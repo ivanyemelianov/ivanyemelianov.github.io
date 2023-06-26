@@ -58,7 +58,7 @@ function loseWinCheck() {
           window.location.reload();
         }
     }
-    if (wordCount === 50)
+    if (wordCount === 30)
     {
         const result = window.confirm("You won");
       
