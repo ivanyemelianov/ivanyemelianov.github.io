@@ -153,7 +153,7 @@ const dict = new Map([
   ['bolsa', 'bag'],
   ['papel', 'paper'],
   ['alcanzó', 'reached'],
-  ['oír', 'to hear']
+  ['oír', 'to hear'],
   ['he oído', 'I have heard'],
   ['se quedó', 'he/she stayed'],
   ['invadió', 'invaded'],
@@ -244,5 +244,5 @@ const dict = new Map([
   ['lluvias', 'rains'],
   ['han mostrado', 'have shown'],
   ['televidentes', 'viewers'],
-  ['apartados', 'sections']
+  ['apartados', 'sections'],
 ]);
