@@ -13,7 +13,6 @@ const dict = new Map([
   ['señalar', 'point'],
   ['enfrente', 'across'],
   ['enfadado', 'angry'],
-  ['agitación', 'agitation'],
   ['alcanzar', 'reach'],
   ['quedarse', 'stay'],
   ['contenerse', 'hold back'],
