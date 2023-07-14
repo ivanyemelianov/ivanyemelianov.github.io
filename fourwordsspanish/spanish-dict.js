@@ -3,7 +3,7 @@ const dict = new Map([
   ['apresurar', 'hurry'],
   ['presutarse', 'presume'],
   ['seguir', 'continue'],
-  ['pese', 'despite']
+  ['pese', 'despite'],
   ['chaparrón', 'shower'],
   ['estrellas', 'stars'],
   ['fugaces', 'fleeting'],
