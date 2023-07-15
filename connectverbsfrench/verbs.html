@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="french-dict.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>Verbs</title>
+</head>
+<body>
+    <div class="top-panel">
+        <div class="lives"><p>Mistakes: <span id="hp">3</span></p></div>
+        <div class="words"><p>Words: <span id="lw">0</span></p></div>
+    </div>
+
+    <div class="main">
+        <div class="" id="translation-wrapper"><span id="translation"></span></div>
+        <div class="insert" id="insert">
+            <ul class="lhs">
+                <li>Yo </li>
+                <li>Tu </li>
+                <li>El/Ella </li>
+                <li>Nosotros </li>
+                <li>Vosotros </li>
+                <li>Ellos/Ellas </li>
+            </ul>
+            <ul class="rhs" id="list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="parts" id="parts"></div>
+        <div class="result" id="result"></div>
+        <div class="nextBtn" id="nextWrapper"><button class="next" onclick="nextGroup()">Next</button></div> 
+    </div>
+
+    <div class="bottom-panel">
+
+    </div>
+    
+</body>
+</html>
