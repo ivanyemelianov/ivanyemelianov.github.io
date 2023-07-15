@@ -1,3 +1,3 @@
 const dict = new Map([
-  ['', 'stone']
+  ['comer', 'como comes come comemos comeis comen']
 ]);

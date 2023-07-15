@@ -76,3 +76,14 @@ body {
 #nextWrapper {
     display: none;
 }
+
+.insert {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rhs, .lhs {
+    width: 50%;
+    list-style: none;
+}
