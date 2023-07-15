@@ -1,3 +1,16 @@
 const dict = new Map([
-  ['comer', 'como comes come comemos comeis comen']
+  ['speak (hablar)', 'hablo hablas habla hablamos habláis hablan'],
+  ['eat (comer)', 'como comes come comemos coméis comen'],
+  ['live (vivir)', 'vivo vives vive vivimos vivís viven'],
+  ['be (ser)', 'soy eres es somos sois son'],
+  ['be (estar)', 'estoy estás está estamos estáis están'],
+  ['have (tener)', 'tengo tienes tiene tenemos tenéis tienen'],
+  ['go (ir)', 'voy vas va vamos vais van'],
+  ['do/make (hacer)', 'hago haces hace hacemos hacéis hacen'],
+  ['see (ver)', 'veo ves ve vemos veis ven'],
+  ['know (saber)', 'sé sabes sabe sabemos sabéis saben'],
+  ['say (decir)', 'digo dices dice decimos decís dicen'],
+  ['can (poder)', 'puedo puedes puede podemos podéis pueden'],
+  ['give (dar)', 'doy das da damos dais dan'],
+  ['come (venir)', 'vengo vienes viene venimos venís vienen'],
 ]);
