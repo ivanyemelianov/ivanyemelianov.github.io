@@ -2,7 +2,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    touch-action: manipulation;
 }
 
 .top-panel {
@@ -34,7 +33,6 @@ body {
 .lives, .words {
     width: 50%;
     padding: 0 20px;
-    touch-action: manipulation;
 }
 
 .words > p {
