@@ -34,6 +34,7 @@ body {
 .lives, .words {
     width: 50%;
     padding: 0 20px;
+    touch-action: manipulation;
 }
 
 .words > p {
