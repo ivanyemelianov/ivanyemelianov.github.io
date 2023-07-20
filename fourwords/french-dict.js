@@ -173,4 +173,4 @@ const dict = new Map([
   ['maladie', 'illness'],
   ['remède', 'remedy'],
   ['pharmacie', 'pharmacy']
-  ]);
+]);

@@ -78,13 +78,14 @@ body {
     display: none;
 }
 
-.insert {
+/*.insert {
     display: flex;
     flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: center;
-}
+}*/
 
 .rhs, .lhs {
-    width: 50%;
+    /*width: 50%;*/
     list-style: none;
 }
