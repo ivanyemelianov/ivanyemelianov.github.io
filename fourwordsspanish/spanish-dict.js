@@ -6,7 +6,6 @@ const dict = new Map([
   ['sentido común', 'common sense'],
   ['afable', 'affable'],
   ['once', 'eleven'],
-  ['descuidada', 'careless'],
   ['siquiera', 'even'],
   ['cortante', 'cutting'],
   ['soslayo', 'sideways'],
