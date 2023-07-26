@@ -33,7 +33,7 @@ body {
 
 .lives, .words {
     width: 50%;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 .words > p {
@@ -78,6 +78,14 @@ body {
     display: none;
 }
 
+/*.insert {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: center;
+}*/
+
 .rhs, .lhs {
+    /*width: 50%;*/
     list-style: none;
 }
