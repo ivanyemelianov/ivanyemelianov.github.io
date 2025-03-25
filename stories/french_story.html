@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>French Story with Translations</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
     <script src="translate.js" defer></script>
 </head>
 <body>
@@ -25,13 +25,5 @@
         <span class="translation">thankfully</span>
         .
     </p>
-    <script>
-        function toggleTranslation(element) {
-            const translation = element.nextElementSibling;
-            if (translation && translation.classList.contains('translation')) {
-                translation.style.display = (translation.style.display === 'none' || translation.style.display === '') ? 'inline' : 'none';
-            }
-        }
-    </script>
 </body>
 </html>
