@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Story with Translations</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        .translation { display: none; color: gray; margin-left: 5px; }
+        .clickable { color: #007bff; cursor: pointer; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Un Pequeño Cuento</h1>
+    <p>
+        <span class="clickable" onclick="toggleTranslation(this)">Había una vez</span>
+        <span class="translation">Once upon a time</span>
+        en un pequeño pueblo,
+        <span class="clickable" onclick="toggleTranslation(this)">vivía un gato negro</span>
+        <span class="translation">lived a black cat</span>
+        que amaba la luna.
+    </p>
+    <script>
+        function toggleTranslation(element) {
+            const translation = element.nextElementSibling;
+            if (translation && translation.classList.contains('translation')) {
+                translation.style.display = (translation.style.display === 'none' || translation.style.display === '') ? 'inline' : 'none';
+            }
+        }
+    </script>
+</body>
+</html>
