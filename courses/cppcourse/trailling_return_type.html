@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailing Return Type</title>
+</head>
+<body>
+    <h2>C++ Trailing Return Types</h2>
+
+<p>In C++, the <strong>trailing return type</strong> allows you to specify the return type of a function after the parameters. This feature is useful when the return type depends on the function's parameters, especially in template programming.</p>
+
+<h3>Syntax:</h3>
+<pre><code>
+#include &lt;iostream&gt;
+
+// Function declaration using trailing return type
+auto add(int a, int b) -> int {
+    return a + b;
+}
+
+int main() {
+    std::cout &lt;&lt; "Sum: " &lt;&lt; add(5, 3) &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+
+<h3>Key Points:</h3>
+<ul>
+  <li><strong>Trailing return type</strong> uses <code>auto</code> for the return type, followed by <code>-></code> and the actual type.</li>
+  <li>It's particularly useful in cases like <em>template functions</em> where the return type may depend on the input types.</li>
+  <li><strong>Readable code</strong> – Makes function signatures cleaner, especially for complex return types.</li>
+</ul>
+
+<h3>Example with Template:</h3>
+<pre><code>
+#include &lt;iostream&gt;
+
+template &lt;typename T&gt;
+auto multiply(T a, T b) -> decltype(a * b) {
+    return a * b;
+}
+
+int main() {
+    std::cout &lt;&lt; "Product: " &lt;&lt; multiply(2.5, 3.5) &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+
+<p>In the example, the return type of <code>multiply</code> is deduced based on the multiplication of the two input values.</p>
+
+</body>
+</html>

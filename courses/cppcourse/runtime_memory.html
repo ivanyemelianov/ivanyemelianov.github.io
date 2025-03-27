@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runtime Memory Basics</title>
+</head>
+<body>
+    <h2>C++ Runtime Memory Basics</h2>
+
+<p>In C++, memory is divided into different regions, each serving a specific purpose at runtime. Understanding memory allocation is crucial for efficient programming and avoiding issues like memory leaks.</p>
+
+<h3>Memory Regions:</h3>
+<ul>
+  <li><strong>Code Segment</strong> – Stores compiled program instructions.</li>
+  <li><strong>Stack</strong> – Stores function calls, local variables, and control flow.</li>
+  <li><strong>Heap</strong> – Stores dynamically allocated memory (using <code>new</code>/<code>delete</code> or <code>malloc</code>/<code>free</code>).</li>
+  <li><strong>Global/Static Data</strong> – Stores global and static variables, initialized once and persists throughout the program.</li>
+</ul>
+
+<h3>Example:</h3>
+<pre><code>
+#include &lt;iostream&gt;
+
+int globalVar = 10; // Stored in Global/Static Data
+
+void function() {
+    int localVar = 5; // Stored in Stack
+    int* dynamicVar = new int(20); // Stored in Heap
+    std::cout &lt;&lt; "Local: " &lt;&lt; localVar &lt;&lt; ", Dynamic: " &lt;&lt; *dynamicVar &lt;&lt; std::endl;
+    delete dynamicVar; // Free allocated memory
+}
+
+int main() {
+    function();
+    return 0;
+}
+</code></pre>
+
+<h3>Key Points:</h3>
+<ul>
+  <li><strong>Stack</strong> – Fast, automatic allocation, limited size.</li>
+  <li><strong>Heap</strong> – Manually managed, used for dynamic memory allocation.</li>
+  <li><strong>Global/Static</strong> – Exists for the entire program duration.</li>
+  <li><strong>Proper memory management</strong> is essential to prevent memory leaks.</li>
+</ul>
+
+
+</body>
+</html>

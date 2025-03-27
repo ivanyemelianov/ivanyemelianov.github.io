@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expressions VS Statemants</title>
+  </head>
+  <body>
+    <h2>C++ Expressions vs. Statements</h2>
+
+    <p>
+      In C++, <strong>expressions</strong> and <strong>statements</strong> are
+      fundamental building blocks of code.
+    </p>
+
+    <h3>Expressions</h3>
+    <p>
+      An <strong>expression</strong> is any piece of code that produces a value.
+      It consists of <em>operands</em> and <em>operators</em> and can be
+      assigned to a variable or used directly.
+    </p>
+
+    <h4>Examples of expressions:</h4>
+    <pre><code>
+int x = 5 + 3;   // 5 + 3 is an expression (evaluates to 8)
+bool isTrue = (x > 5); // (x > 5) is an expression (evaluates to true)
+std::cout &lt;&lt; x;  // std::cout &lt;&lt; x is also an expression (returns std::cout)
+</code></pre>
+
+    <p>✔️ <strong>Expressions always have a value and a type.</strong></p>
+
+    <hr />
+
+    <h3>Statements</h3>
+    <p>
+      A <strong>statement</strong> is a complete instruction that performs an
+      action. It can include expressions but doesn’t always produce a value.
+    </p>
+
+    <h4>Types of statements:</h4>
+    <ul>
+      <li>
+        <strong>Expression Statements</strong> – Expressions followed by
+        <code>;</code>.
+      </li>
+      <li>
+        <strong>Declaration Statements</strong> – Declare variables or
+        functions.
+      </li>
+      <li>
+        <strong>Control Statements</strong> – Loops (<code>for</code>,
+        <code>while</code>), conditionals (<code>if</code>), etc.
+      </li>
+      <li>
+        <strong>Compound Statements</strong> – Blocks enclosed in
+        <code>{ }</code>.
+      </li>
+    </ul>
+
+    <h4>Examples of statements:</h4>
+    <pre><code>
+int a = 10;        // Declaration statement
+a = a + 5;         // Expression statement
+if (a > 10) {      // Control statement
+    std::cout &lt;&lt; "Greater than 10";  // Another expression statement
+}
+</code></pre>
+
+    <p>
+      ✔️
+      <strong
+        >Statements execute actions but don’t necessarily return a
+        value.</strong
+      >
+    </p>
+
+    <hr />
+
+    <h3>Key Differences</h3>
+    <ul>
+      <li>
+        <strong>Expressions</strong> produce values, while
+        <strong>statements</strong> perform actions.
+      </li>
+      <li>
+        Every expression can be part of a statement, but not every statement is
+        an expression.
+      </li>
+      <li>
+        Statements often end with a semicolon (<code>;</code>), while
+        expressions may appear inside statements.
+      </li>
+    </ul>
+  </body>
+</html>

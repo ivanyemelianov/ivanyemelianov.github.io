@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preprocessor</title>
+</head>
+<body>
+    <h2>C++ Includes, Defines, and Macros</h2>
+
+<p>C++ provides preprocessor directives like <strong>#include</strong>, <strong>#define</strong>, and macros to manage code inclusion, define constants, and create reusable code snippets before compilation.</p>
+
+<h3>1. <code>#include</code></h3>
+<p>The <strong>#include</strong> directive is used to include the contents of a file, such as a header file, into the source code. This is essential for using libraries and functions that are not defined within the same file.</p>
+
+<h4>Example:</h4>
+<pre><code>
+#include &lt;iostream&gt; // Standard library for input/output
+
+int main() {
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+<p>The <strong>#include</strong> directive is processed during preprocessing, bringing in the contents of <code>iostream</code> so you can use the <code>std::cout</code> object.</p>
+
+<hr>
+
+<h3>2. <code>#define</code></h3>
+<p>The <strong>#define</strong> directive is used to define constants or macros. It replaces occurrences of the defined name with the specified value before compilation begins.</p>
+
+<h4>Example:</h4>
+<pre><code>
+#define PI 3.14159
+
+int main() {
+    float area = PI * 10 * 10; // Using the defined constant
+    std::cout &lt;&lt; "Area: " &lt;&lt; area &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+<p>Here, the <strong>#define</strong> directive defines the constant <code>PI</code>, which is substituted with its value wherever it appears in the code.</p>
+
+<hr>
+
+<h3>3. Macros</h3>
+<p>Macros in C++ are essentially code snippets that can take arguments. They are similar to functions but are replaced by their expanded code during preprocessing.</p>
+
+<h4>Example:</h4>
+<pre><code>
+#define SQUARE(x) ((x) * (x))
+
+int main() {
+    int result = SQUARE(5); // Expands to ((5) * (5))
+    std::cout &lt;&lt; "Square: " &lt;&lt; result &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+<p>Here, <strong>SQUARE(x)</strong> is a macro that calculates the square of a number. Macros are expanded by the preprocessor before compilation.</p>
+
+<hr>
+
+<h3>Key Points:</h3>
+<ul>
+  <li><strong>#include</strong> – Includes files into the source code (header files, libraries, etc.).</li>
+  <li><strong>#define</strong> – Defines constants and simple macros.</li>
+  <li><strong>Macros</strong> – Reusable code snippets that are expanded at preprocessing time, but they lack type safety compared to functions.</li>
+  <li>Macros do not perform type checking, which can sometimes lead to unexpected behavior if not used carefully.</li>
+</ul>
+
+</body>
+</html>

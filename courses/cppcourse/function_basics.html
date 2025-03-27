@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Basics</title>
+  </head>
+  <body>
+    <h2>C++ Function Basics</h2>
+
+    <p>
+      Functions in C++ allow code reuse and modularity by grouping instructions
+      into reusable blocks. A function takes input (<em>parameters</em>),
+      performs an operation, and optionally returns a value.
+    </p>
+
+    <h3>Syntax:</h3>
+    <pre><code>
+#include &lt;iostream&gt;
+
+// Function declaration
+int add(int a, int b);
+
+// Main function
+int main() {
+    int sum = add(5, 3);
+    std::cout &lt;&lt; "Sum: " &lt;&lt; sum &lt;&lt; std::endl;
+    return 0;
+}
+
+// Function definition
+int add(int a, int b) {
+    return a + b;
+}
+</code></pre>
+
+    <h3>Key Points:</h3>
+    <ul>
+      <li>
+        <strong>Return Type</strong> – Specifies the type of value returned
+        (e.g., <code>int</code>, <code>void</code>).
+      </li>
+      <li>
+        <strong>Parameters</strong> – Input values passed to the function.
+      </li>
+      <li>
+        <strong>Declaration & Definition</strong> – Functions can be declared
+        before use and defined later.
+      </li>
+      <li>
+        <strong>Function Call</strong> – Executes the function and retrieves the
+        return value.
+      </li>
+    </ul>
+  </body>
+</html>

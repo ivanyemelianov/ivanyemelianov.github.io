@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Process</title>
+</head>
+<body>
+    <h2>C++ Build Process</h2>
+
+<p>The <strong>build process</strong> in C++ involves multiple steps that convert source code into an executable program. Understanding the build process is crucial for debugging, optimization, and efficient development.</p>
+
+<h3>Steps in the Build Process:</h3>
+<ul>
+  <li><strong>Preprocessing</strong> – The preprocessor handles directives like <code>#include</code>, <code>#define</code>, and <code>#ifdef</code>. It produces an expanded source code.</li>
+  <li><strong>Compilation</strong> – The compiler converts the preprocessed code into assembly language or machine code, generating an object file (.o or .obj).</li>
+  <li><strong>Assembly</strong> – The assembler converts the object file into machine code, producing a binary format.</li>
+  <li><strong>Linking</strong> – The linker combines object files and libraries to create the final executable. It resolves references to external functions and variables.</li>
+</ul>
+
+<h3>Example:</h3>
+<pre><code>
+// File: main.cpp
+#include &lt;iostream&gt;
+
+int main() {
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+
+<p>To compile and link this simple program using <strong>g++</strong>:</p>
+<pre><code>
+g++ main.cpp -o hello
+</code></pre>
+
+<p>The command will:</p>
+<ul>
+  <li>Preprocess the code (expanding macros and including files).</li>
+  <li>Compile it into an object file <code>main.o</code>.</li>
+  <li>Link the object file to produce the executable <code>hello</code>.</li>
+</ul>
+
+<h3>Key Points:</h3>
+<ul>
+  <li><strong>Preprocessing</strong> handles macro expansion and file inclusion.</li>
+  <li><strong>Compilation</strong> converts source code to machine language.</li>
+  <li><strong>Linking</strong> combines object files and libraries into an executable.</li>
+  <li>Makefiles or build systems like <code>cmake</code> automate this process.</li>
+</ul>
+
+</body>
+</html>
