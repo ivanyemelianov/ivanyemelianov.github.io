@@ -39,46 +39,26 @@
                 <div class="sections">
 <button class="accordion">1. Function Basics</button>
 <div class="panel">
+<p>Functions in C++ allow code reuse and modularity by grouping instructions into reusable blocks. A function takes input (parameters), performs an operation, and optionally returns a value.</p>   
 <code>
-//Declaration 
-int Add(int num1, int num2); 
- 
-int GiveMeFive() 
-{ 
-     return 50; 
-} 
- 
-void GiveMeNothing() 
-{ 
-     return; 
-} 
- 
-void GiveMeNothingToo() 
-{ 
-         //Empty 
-} 
- 
-int MultiplyByTwo(int number) 
-{ 
-         return Add(number, 2); 
-} 
- 
-//Initialization 
-int Add(int num1, int num2) 
-{ 
-         return num1 + num2; 
-} 
- 
-int main() 
-{ 
-         GiveMeFive(); 
-         GiveMeNothing(); 
-         GiveMeNothingToo(); 
-     
-         int result = MultiplyByTwo(22); 
-         int sum = Add(3, 4); 
-} 
+    #include <iostream>
+
+        // Function declaration
+        int add(int a, int b);
+        
+        // Main function
+        int main() {
+            int sum = add(5, 3);
+            std::cout << "Sum: " << sum << std::endl;
+            return 0;
+        }
+        
+        // Function definition
+        int add(int a, int b) {
+            return a + b;
+        }        
 </code>
+<ul> <li><strong>Return Type</strong> – Specifies the type of value returned (e.g., <code>int</code>, <code>void</code>).</li> <li><strong>Parameters</strong> – Input values passed to the function.</li> <li><strong>Declaration & Definition</strong> – Functions can be declared before use and defined later.</li> <li><strong>Function Call</strong> – Executes the function and retrieves the return value.</li> </ul>
 </div>
 
 <button class="accordion">2. Build process</button>
