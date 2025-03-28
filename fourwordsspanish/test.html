@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+</head>
+<body>
+    <div class="main">
+        <div id="word-wrapper">
+            <span id="word">Hello World</span>
+        </div>
+        <button onclick="speakText()">Speak</button>
+    </div>
+
+    <script>
+        let voices = [];
+
+        // Function to load voices
+        function loadVoices() {
+            voices = window.speechSynthesis.getVoices();
+            console.log("Voices loaded:", voices); // Log the voices available for debugging
+        }
+
+        // Listen for voices to change (important to ensure voices are loaded)
+        window.speechSynthesis.onvoiceschanged = function () {
+            loadVoices();
+        };
+
+        // Function to speak the text
+        function speakText() {
+            if (voices.length === 0) {
+                console.log('Voices are still loading...');
+                setTimeout(speakText, 100); // Retry after a short delay
+                return;
+            }
+
+            const word = document.getElementById('word').textContent;
+
+            const utterance = new SpeechSynthesisUtterance(word);
+
+            // Use the first available voice (if available)
+            const selectedVoice = voices[0];
+            utterance.voice = selectedVoice;
+
+            // Check if speech is already in progress
+            if (!window.speechSynthesis.speaking) {
+                window.speechSynthesis.speak(utterance);
+            } else {
+                console.log('Speech is already in progress.');
+            }
+        }
+
+        // Load voices on page load
+        loadVoices();
+    </script>
+</body>
+</html>

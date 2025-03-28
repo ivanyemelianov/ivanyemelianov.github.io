@@ -116,4 +116,3 @@ function getRandomKeyFromMap(map) {
     // Return the random key
     return randomKey;
   }
-
