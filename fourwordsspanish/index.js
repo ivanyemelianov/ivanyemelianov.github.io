@@ -117,38 +117,4 @@ function getRandomKeyFromMap(map) {
     return randomKey;
   }
 
-  let isSpeaking = false; // Flag to track speech status
-
-  // Initialize voices once they're loaded
-  let voices = [];
-  window.speechSynthesis.onvoiceschanged = function() {
-      voices = window.speechSynthesis.getVoices();
-      console.log(voices);
-  };
-  
-  // Function to speak the text when the button is clicked
-  function speakText() {
-      const wordElement = document.getElementById('word');
-      const word = wordElement.textContent || wordElement.innerText;
-  
-      if (word && !isSpeaking) {
-          isSpeaking = true;
-          console.log(word);
-          const utterance = new SpeechSynthesisUtterance(word);
-  
-          // Find the voice you want (e.g., English - Canada)
-          const selectedVoice = voices.find(voice => voice.lang === "es-ES"); // Example: English Canada
-          if (selectedVoice) {
-              utterance.voice = selectedVoice;
-          }
-  
-          // When speech ends, reset the isSpeaking flag
-          utterance.onend = function() {
-              isSpeaking = false;
-          };
-  
-          // Start speaking the word
-          window.speechSynthesis.speak(utterance);
-      }
-  }
   
