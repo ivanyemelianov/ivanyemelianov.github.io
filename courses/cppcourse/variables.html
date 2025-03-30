@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in C++</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        code { background-color: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Variables in C++</h1>
+    <p>In C++, a variable is a storage location with a specific type that holds a value. Each variable must be declared before use.</p>
+    
+    <h2>Declaring Variables</h2>
+    <p>Variables in C++ are declared using a type followed by a name:</p>
+    <pre><code>int age;
+double price;
+char grade;</code></pre>
+    
+    <h2>Initializing Variables</h2>
+    <p>Variables can be assigned values at the time of declaration:</p>
+    <pre><code>int age = 25;
+double price = 99.99;
+char grade = 'A';</code></pre>
+    
+    <h2>Types of Variables</h2>
+    <ul>
+        <li><strong>int</strong>: Integer values (e.g., <code>int x = 10;</code>)</li>
+        <li><strong>double</strong>: Floating-point values (e.g., <code>double y = 3.14;</code>)</li>
+        <li><strong>char</strong>: Single character (e.g., <code>char letter = 'C';</code>)</li>
+        <li><strong>bool</strong>: Boolean values (<code>true</code> or <code>false</code>)</li>
+        <li><strong>string</strong> (C++11+): Sequence of characters (e.g., <code>string name = "John";</code>)</li>
+    </ul>
+    
+    <h2>Variable Scope</h2>
+    <p>Variables have different scopes:</p>
+    <ul>
+        <li><strong>Local variables</strong>: Declared inside a function, accessible only within that function.</li>
+        <li><strong>Global variables</strong>: Declared outside functions, accessible throughout the program.</li>
+    </ul>
+    
+    <h2>Example Program</h2>
+    <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int age = 30;
+    double height = 5.9;
+    cout << "Age: " << age << "\n";
+    cout << "Height: " << height << " feet\n";
+    return 0;
+}</code></pre>
+    
+    <p>This program declares and initializes two variables, then prints their values.</p>
+</body>
+</html>

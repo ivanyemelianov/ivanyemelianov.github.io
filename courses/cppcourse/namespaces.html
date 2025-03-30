@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namespaces in C++</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        code { background-color: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Namespaces in C++</h1>
+    <p>Namespaces in C++ help organize code and prevent name conflicts, especially in large projects or when using multiple libraries.</p>
+    
+    <h2>Declaring a Namespace</h2>
+    <p>To create a namespace, use the <code>namespace</code> keyword:</p>
+    <pre><code>namespace MyNamespace {
+    int value = 42;
+}</code></pre>
+    
+    <h2>Accessing Namespace Members</h2>
+    <p>Use the scope resolution operator <code>::</code> to access elements inside a namespace:</p>
+    <pre><code>#include &lt;iostream&gt;
+
+namespace MyNamespace {
+    int value = 42;
+}
+
+int main() {
+    std::cout << MyNamespace::value << std::endl;
+    return 0;
+}</code></pre>
+    
+    <h2>The <code>using</code> Directive</h2>
+    <p>The <code>using</code> directive allows you to avoid prefixing every member with the namespace name:</p>
+    <pre><code>using namespace MyNamespace;
+std::cout << value << std::endl; // No need for MyNamespace::</code></pre>
+    <p>However, using this in global scope can lead to name conflicts.</p>
+    
+    <h2>Nested Namespaces</h2>
+    <p>Namespaces can be nested inside each other:</p>
+    <pre><code>namespace Outer {
+    namespace Inner {
+        int num = 10;
+    }
+}
+
+std::cout << Outer::Inner::num << std::endl;</code></pre>
+    
+    <h2>Example Program</h2>
+    <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+namespace MyNamespace {
+    void greet() {
+        cout << "Hello from MyNamespace!" << endl;
+    }
+}
+
+int main() {
+    MyNamespace::greet();
+    return 0;
+}</code></pre>
+    
+    <p>This example defines a function inside a namespace and calls it from <code>main()</code>.</p>
+</body>
+</html>
