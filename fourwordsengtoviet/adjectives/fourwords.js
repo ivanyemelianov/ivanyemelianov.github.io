@@ -58,7 +58,7 @@ function loseWinCheck() {
           window.location.reload();
         }
     }
-    if (wordCount === 11)
+    if (wordCount === 30)
     {
         const result = window.confirm("You won");
       
@@ -116,3 +116,4 @@ function getRandomKeyFromMap(map) {
     // Return the random key
     return randomKey;
   }
+
