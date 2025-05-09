@@ -46,3 +46,12 @@ body {
 .story p {
     line-height: 1.8;
 }
+
+.story-list ol {
+    text-align: left;
+}
+
+.level {
+    font-size: 10px;
+    color: #474747;
+}
