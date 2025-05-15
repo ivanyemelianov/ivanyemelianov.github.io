@@ -73,8 +73,7 @@ if (wordCount >= 900) {
     }
 
     document.getElementById("stats").innerHTML = correct + "/899"
-    document.getElementById("statWrapper").style.display = "block"
-    
+    document.getElementById("statWrapper").style.display = "block" 
 }
 
 
