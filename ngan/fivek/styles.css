@@ -1,0 +1,3 @@
+body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+.translation { display: none; color: gray; margin-left: 5px; }
+.clickable { color: #000000; cursor: pointer; text-decoration: underline; }

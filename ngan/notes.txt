@@ -1,0 +1,5 @@
+1. Add course scructure 
+2. Add A2 words 130 every 4 days +
+3. Add a story every day +
+4. Fix test tool
+5. Draw a picture for every story, draw on a piece of paper and ptu it higher to have a shadow
