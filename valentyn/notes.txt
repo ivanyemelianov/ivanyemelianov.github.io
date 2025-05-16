@@ -3,3 +3,4 @@
 3. Fix the test tool
 4. A2 test
 5. Add 125 new words every 4 days, if he passes the 100 word at once
+6. Story words practice tool
