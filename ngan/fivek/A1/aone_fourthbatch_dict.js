@@ -1,4 +1,4 @@
-const dict = Map([
+const dict = new Map([
     ["policeman", "cảnh sát nam"], // Noun
   ["pool", "bể bơi, hồ"], // Noun
   ["poor", "nghèo, tồi"], // Adjective

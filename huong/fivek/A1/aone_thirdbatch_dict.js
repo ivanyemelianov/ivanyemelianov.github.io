@@ -1,4 +1,4 @@
-const dict = Map([
+const dict = new Map([
 ["it", "nó"], // Pronoun
   ["its", "của nó"], // Determiner
   ["jacket", "áo khoác"], // Noun

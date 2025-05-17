@@ -1,4 +1,4 @@
-const dict = Map([
+const dict = new Map([
 ["dictionary", "từ điển"], // Noun
   ["die", "chết"], // Verb
   ["diet", "chế độ ăn uống"], // Noun

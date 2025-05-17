@@ -1,4 +1,15 @@
 const dict = new Map([
+  [1, ['hello', 'world']],
+  [2, ['good', 'morning']],
+  [3, ['happy', 'coding']]
+])
+
+
+
+
+
+
+const dict1 = new Map([
   ["a, an", "неопределённый артикль"],
   ["about", "о, около"],
   ["above", "над, выше"],
