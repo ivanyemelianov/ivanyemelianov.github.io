@@ -102,7 +102,7 @@ for (let i = 0; i < buttons.length; i++) {
             correct++;
             lwEl.innerHTML = correct;
         } else {
-            changeResult(buttonWord);
+            changeResult( dict.get(wordCount)[0] + " - " + buttonWord);
             hp++;
             hpEl.innerHTML = hp;
         }
