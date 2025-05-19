@@ -1,202 +1,202 @@
 const dict = new Map([
-["a, an", "mạo từ không xác định"],
-  ["about", "về, khoảng"],
-  ["above", "bên trên, vượt quá"],
-  ["across", "ngang qua, bên kia"],
-  ["action", "hành động, động tác"],
-  ["activity", "hoạt động, sinh hoạt"],
-  ["actor", "diễn viên nam"],
-  ["actress", "diễn viên nữ"],
-  ["add", "thêm vào, cộng"],
-  ["address", "địa chỉ, bài diễn văn"],
-  ["adult", "người lớn, trưởng thành"],
-  ["advice", "lời khuyên"],
-  ["afraid", "sợ hãi, lo lắng"],
-  ["after", "sau, tiếp theo"],
-  ["afternoon", "buổi chiều"],
-  ["again", "lại, một lần nữa"],
-  ["age", "tuổi, thời đại"],
-  ["ago", "trước đây"],
-  ["agree", "đồng ý"],
-  ["air", "không khí"],
-  ["airport", "sân bay"],
-  ["all", "tất cả"],
-  ["also", "cũng, cũng vậy"],
-  ["always", "luôn luôn"],
-  ["amazing", "làm cho kinh ngạc"],
-  ["and", "và"],
-  ["angry", "tức giận"],
-  ["animal", "động vật"],
-  ["another", "khác"],
-  ["answer", "câu trả lời, trả lời"],
-  ["any", "bất kỳ"],
-  ["anyone", "ai đó"],
-  ["anything", "bất cứ điều gì"],
-  ["apartment", "căn hộ"],
-  ["apple", "quả táo"],
-  ["April", "tháng tư"],
-  ["area", "vùng, diện tích, lĩnh vực"],
-  ["arm", "cánh tay"],
-  ["around", "xung quanh"],
-  ["arrive", "đến"],
-  ["art", "nghệ thuật"],
-  ["article", "bài báo"],
-  ["artist", "nghệ sĩ"],
-  ["as", "như, cũng, bằng"], // Preposition
-  ["ask", "hỏi, đề nghị, mời"], // Verb
-  ["at", "ở (địa điểm), vào lúc, hướng vào (chỉ hướng)"], // Preposition
-  ["August", "tháng Tám"], // Noun
-  ["aunt", "cô, dì"], // Noun
-  ["autumn", "mùa thu"], // Noun
-  ["away", "xa, tránh xa, mất"], // Adverb
-  ["baby", "trẻ nhỏ, em bé"], // Noun
-  ["back", "cái lưng, đằng sau, quay lại"], // Noun, Adverb
-  ["bad", "xấu, tồi, ác"], // Adjective
-  ["bag", "túi, bao"], // Noun
-  ["ball", "quả bóng, banh"], // Noun
-  ["banana", "quả chuối"], // Noun
-  ["band", "ban nhạc, dải băng"], // Noun
-  ["bank", "ngân hàng, bờ sông"], // Noun
-  ["bath", "bồn tắm, sự tắm rửa"],
-  ["bathroom", "nhà vệ sinh"], // Noun
-  ["be", "là, thì, ở"], // Verb
-  ["beach", "bãi biển"], // Noun
-  ["beautiful", "đẹp"], // Adjective
-  ["because", "bởi vì"], // Conjunction
-  ["become", "trở nên, trở thành"], // Verb
-  ["bed", "cái giường"], // Noun
-  ["bedroom", "phòng ngủ"], // Noun
-  ["beer", "rượu bia"], // Noun
-  ["before", "trước, trước khi"], // Preposition
-  ["begin", "bắt đầu"], // Verb
-  ["beginning", "phần đầu"], // Noun
-  ["behind", "đằng sau"], // Preposition, Adverb
-  ["believe", "tin tưởng"], // Verb
-  ["below", "dưới, ở bên dưới"], // Adverb, Preposition
-  ["best", "tốt nhất"], // Adjective
-  ["better", "tốt hơn"], // Adjective
-  ["between", "giữa"], // Preposition
-  ["bicycle", "xe đạp"], // Noun
-  ["big", "to, lớn"], // Adjective
-  ["bike", "xe đạp"], // Noun
-  ["bill", "hoá đơn"], // Noun
-  ["bird", "con chim"], // Noun
-  ["birthday", "sinh nhật"], // Noun
-  ["black", "đen"], // Adjective, Noun
-  ["blog", "blog"], // Noun
-  ["blonde", "tóc vàng"], // Adjective
-  ["blue", "xanh dương"], // Adjective, Noun
-  ["boat", "thuyền"], // Noun
-  ["body", "cơ thể"], // Noun
-  ["book", "quyển sách"], // Noun
-  ["boot", "giày ống"], // Noun
-  ["bored", "chán nản"], // Adjective
-  ["boring", "buồn tẻ"], // Adjective
-  ["born", "sinh ra"], // Verb
-  ["both", "cả hai"], // Determiner, Pronoun
-  ["bottle", "chai, lọ"], // Noun
-  ["box", "hộp, thùng"], // Noun
-  ["boy", "cậu bé, con trai"], // Noun
-  ["boyfriend", "bạn trai"], // Noun
-  ["bread", "bánh mì"], // Noun
-  ["break", "nghỉ, gián đoạn, đập vỡ"], // Verb, Noun
-  ["breakfast", "bữa sáng"], // Noun
-  ["bring", "mang lại, cầm lại"], // Verb
-  ["brother", "anh trai, em trai"], // Noun
-  ["brown", "màu nâu"], // Adjective, Noun
-  ["build", "xây dựng, vóc người"], // Verb
-  ["building", "tòa nhà, công trình xây dựng"], // Noun
-  ["bus", "xe buýt"], // Noun
-  ["business", "kinh doanh, doanh nghiệp"], // Noun
-  ["busy", "bận rộn"], // Adjective
-  ["but", "nhưng"], // Conjunction
-  ["butter", "bơ"], // Noun
-  ["buy", "mua"], // Verb
-  ["by", "bởi, bên cạnh, theo"], // Preposition
-  ["bye", "tạm biệt"], // Interjection
-  ["cafe", "quán cà phê"], // Noun
-  ["cake", "bánh ngọt"], // Noun
-  ["call", "gọi, cuộc gọi"], // Verb, Noun
-  ["camera", "máy ảnh"], // Noun
-  ["can", "có thể"], // Modal Verb
-  ["cannot", "không thể"], // Modal verb
-  ["capital", "thủ đô, vốn"], // Noun, Adjective
-  ["car", "xe ô tô"], // Noun
-  ["card", "thẻ, thiệp"], // Noun
-  ["career", "nghề nghiệp"], // Noun
-  ["carrot", "cà rốt"], // Noun
-  ["carry", "mang, vác"], // Verb
-  ["cat", "con mèo"], // Noun
-  ["CD", "đĩa CD"], // Noun
-  ["cent", "xu, phần trăm"], // Noun
-  ["centre", "trung tâm"], // Noun
-  ["century", "thế kỷ"], // Noun
-  ["chair", "cái ghế"], // Noun
-  ["change", "thay đổi, tiền thối"], // Verb, Noun
-  ["chart", "biểu đồ"], // Noun
-  ["cheap", "rẻ"], // Adjective
-  ["check", "kiểm tra, séc"], // Verb, Noun
-  ["cheese", "phô mai"], // Noun
-  ["chicken", "gà, thịt gà"], // Noun
-  ["child", "đứa trẻ"], // Noun
-  ["chocolate", "sô cô la"], // Noun
-  ["choose", "chọn lựa"], // Verb
-  ["cinema", "rạp chiếu phim"], // Noun
-  ["city", "thành phố"], // Noun
-  ["class", "lớp học, hạng"], // Noun
-  ["classroom", "phòng học"], // Noun
-  ["clean", "sạch, lau chùi"], // Adjective, Verb
-  ["climb", "leo trèo"], // Verb
-  ["clock", "đồng hồ"], // Noun
-  ["close", "đóng, gần"], // Verb, Adjective
-  ["clothes", "quần áo"],
-  ["club", "câu lạc bộ"], // Noun
-  ["coat", "áo khoác"], // Noun
-  ["coffee", "cà phê"], // Noun
-  ["cold", "lạnh"], // Adjective, Noun
-  ["college", "trường đại học"], // Noun
-  ["colour", "màu sắc"], // Noun
-  ["come", "đến"], // Verb
-  ["common", "phổ biến"], // Adjective
-  ["company", "công ty"], // Noun
-  ["compare", "so sánh"], // Verb
-  ["complete", "hoàn thành, đầy đủ"], // Adjective, Verb
-  ["computer", "máy tính"], // Noun
-  ["concert", "buổi hòa nhạc"], // Noun
-  ["conversation", "cuộc trò chuyện"], // Noun
-  ["cook", "nấu ăn"], // Verb
-  ["cooking", "việc nấu ăn"], // Noun
-  ["cool", "mát mẻ, ngầu"], // Adjective
-  ["correct", "đúng, sửa chữa"], // Adjective, Verb
-  ["cost", "giá cả, chi phí"], // Noun, Verb
-  ["could", "có thể (quá khứ của can)"], // Modal Verb
-  ["country", "quốc gia, đất nước"], // Noun
-  ["course", "khóa học, tuyến đường"], // Noun
-  ["cousin", "anh chị em họ"], // Noun
-  ["cow", "con bò"], // Noun
-  ["cream", "kem (sữa), kem (trang điểm)"], // Noun
-  ["create", "tạo ra"], // Verb
-  ["culture", "văn hóa"], // Noun
-  ["cup", "tách, cốc"], // Noun
-  ["customer", "khách hàng"], // Noun
-  ["cut", "cắt, vết cắt"], // Verb, Noun
-  ["dad", "bố"], // Noun
-  ["dance", "nhảy, khiêu vũ"], // Verb, Noun
-  ["dancer", "vũ công"], // Noun
-  ["dancing", "sự khiêu vũ"], // Noun
-  ["dangerous", "nguy hiểm"], // Adjective
-  ["dark", "tối, đen"], // Adjective
-  ["date", "ngày, quả chà là"], // Noun
-  ["daughter", "con gái"], // Noun
-  ["day", "ngày"], // Noun
-  ["dear", "thân yêu, kính mến"], // Adjective
-  ["December", "tháng Mười Hai"], // Noun
-  ["decide", "quyết định"], // Verb
-  ["delicious", "ngon"], // Adjective
-  ["describe", "miêu tả"], // Verb
-  ["description", "sự miêu tả"], // Noun
-  ["design", "thiết kế"], // Noun, Verb
-  ["desk", "bàn làm việc"], // Noun
-  ["detail", "chi tiết"], // Noun
-  ["dialogue", "đối thoại"], // Noun
-])
+  [1, ['a, an', 'mạo từ không xác định']],
+  [2, ['about', 'về, khoảng']],
+  [3, ['above', 'bên trên, vượt quá']],
+  [4, ['across', 'ngang qua, bên kia']],
+  [5, ['action', 'hành động, động tác']],
+  [6, ['activity', 'hoạt động, sinh hoạt']],
+  [7, ['actor', 'diễn viên nam']],
+  [8, ['actress', 'diễn viên nữ']],
+  [9, ['add', 'thêm vào, cộng']],
+  [10, ['address', 'địa chỉ, bài diễn văn']],
+  [11, ['adult', 'người lớn, trưởng thành']],
+  [12, ['advice', 'lời khuyên']],
+  [13, ['afraid', 'sợ hãi, lo lắng']],
+  [14, ['after', 'sau, tiếp theo']],
+  [15, ['afternoon', 'buổi chiều']],
+  [16, ['again', 'lại, một lần nữa']],
+  [17, ['age', 'tuổi, thời đại']],
+  [18, ['ago', 'trước đây']],
+  [19, ['agree', 'đồng ý']],
+  [20, ['air', 'không khí']],
+  [21, ['airport', 'sân bay']],
+  [22, ['all', 'tất cả']],
+  [23, ['also', 'cũng, cũng vậy']],
+  [24, ['always', 'luôn luôn']],
+  [25, ['amazing', 'làm cho kinh ngạc']],
+  [26, ['and', 'và']],
+  [27, ['angry', 'tức giận']],
+  [28, ['animal', 'động vật']],
+  [29, ['another', 'khác']],
+  [30, ['answer', 'câu trả lời, trả lời']],
+  [31, ['any', 'bất kỳ']],
+  [32, ['anyone', 'ai đó']],
+  [33, ['anything', 'bất cứ điều gì']],
+  [34, ['apartment', 'căn hộ']],
+  [35, ['apple', 'quả táo']],
+  [36, ['April', 'tháng tư']],
+  [37, ['area', 'vùng, diện tích, lĩnh vực']],
+  [38, ['arm', 'cánh tay']],
+  [39, ['around', 'xung quanh']],
+  [40, ['arrive', 'đến']],
+  [41, ['art', 'nghệ thuật']],
+  [42, ['article', 'bài báo']],
+  [43, ['artist', 'nghệ sĩ']],
+  [44, ['as', 'như, cũng, bằng']],
+  [45, ['ask', 'hỏi, đề nghị, mời']],
+  [46, ['at', 'ở (địa điểm), vào lúc, hướng vào (chỉ hướng)']],
+  [47, ['August', 'tháng Tám']],
+  [48, ['aunt', 'cô, dì']],
+  [49, ['autumn', 'mùa thu']],
+  [50, ['away', 'xa, tránh xa, mất']],
+  [51, ['baby', 'trẻ nhỏ, em bé']],
+  [52, ['back', 'cái lưng, đằng sau, quay lại']],
+  [53, ['bad', 'xấu, tồi, ác']],
+  [54, ['bag', 'túi, bao']],
+  [55, ['ball', 'quả bóng, banh']],
+  [56, ['banana', 'quả chuối']],
+  [57, ['band', 'ban nhạc, dải băng']],
+  [58, ['bank', 'ngân hàng, bờ sông']],
+  [59, ['bath', 'bồn tắm, sự tắm rửa']],
+  [60, ['bathroom', 'nhà vệ sinh']],
+  [61, ['be', 'là, thì, ở']],
+  [62, ['beach', 'bãi biển']],
+  [63, ['beautiful', 'đẹp']],
+  [64, ['because', 'bởi vì']],
+  [65, ['become', 'trở nên, trở thành']],
+  [66, ['bed', 'cái giường']],
+  [67, ['bedroom', 'phòng ngủ']],
+  [68, ['beer', 'rượu bia']],
+  [69, ['before', 'trước, trước khi']],
+  [70, ['begin', 'bắt đầu']],
+  [71, ['beginning', 'phần đầu']],
+  [72, ['behind', 'đằng sau']],
+  [73, ['believe', 'tin tưởng']],
+  [74, ['below', 'dưới, ở bên dưới']],
+  [75, ['best', 'tốt nhất']],
+  [76, ['better', 'tốt hơn']],
+  [77, ['between', 'giữa']],
+  [78, ['bicycle', 'xe đạp']],
+  [79, ['big', 'to, lớn']],
+  [80, ['bike', 'xe đạp']],
+  [81, ['bill', 'hoá đơn']],
+  [82, ['bird', 'con chim']],
+  [83, ['birthday', 'sinh nhật']],
+  [84, ['black', 'đen']],
+  [85, ['blog', 'blog']],
+  [86, ['blonde', 'tóc vàng']],
+  [87, ['blue', 'xanh dương']],
+  [88, ['boat', 'thuyền']],
+  [89, ['body', 'cơ thể']],
+  [90, ['book', 'quyển sách']],
+  [91, ['boot', 'giày ống']],
+  [92, ['bored', 'chán nản']],
+  [93, ['boring', 'buồn tẻ']],
+  [94, ['born', 'sinh ra']],
+  [95, ['both', 'cả hai']],
+  [96, ['bottle', 'chai, lọ']],
+  [97, ['box', 'hộp, thùng']],
+  [98, ['boy', 'cậu bé, con trai']],
+  [99, ['boyfriend', 'bạn trai']],
+  [100, ['bread', 'bánh mì']],
+  [101, ['break', 'nghỉ, gián đoạn, đập vỡ']],
+  [102, ['breakfast', 'bữa sáng']],
+  [103, ['bring', 'mang lại, cầm lại']],
+  [104, ['brother', 'anh trai, em trai']],
+  [105, ['brown', 'màu nâu']],
+  [106, ['build', 'xây dựng, vóc người']],
+  [107, ['building', 'tòa nhà, công trình xây dựng']],
+  [108, ['bus', 'xe buýt']],
+  [109, ['business', 'kinh doanh, doanh nghiệp']],
+  [110, ['busy', 'bận rộn']],
+  [111, ['but', 'nhưng']],
+  [112, ['butter', 'bơ']],
+  [113, ['buy', 'mua']],
+  [114, ['by', 'bởi, bên cạnh, theo']],
+  [115, ['bye', 'tạm biệt']],
+  [116, ['cafe', 'quán cà phê']],
+  [117, ['cake', 'bánh ngọt']],
+  [118, ['call', 'gọi, cuộc gọi']],
+  [119, ['camera', 'máy ảnh']],
+  [120, ['can', 'có thể']],
+  [121, ['cannot', 'không thể']],
+  [122, ['capital', 'thủ đô, vốn']],
+  [123, ['car', 'xe ô tô']],
+  [124, ['card', 'thẻ, thiệp']],
+  [125, ['career', 'nghề nghiệp']],
+  [126, ['carrot', 'cà rốt']],
+  [127, ['carry', 'mang, vác']],
+  [128, ['cat', 'con mèo']],
+  [129, ['CD', 'đĩa CD']],
+  [130, ['cent', 'xu, phần trăm']],
+  [131, ['centre', 'trung tâm']],
+  [132, ['century', 'thế kỷ']],
+  [133, ['chair', 'cái ghế']],
+  [134, ['change', 'thay đổi, tiền thối']],
+  [135, ['chart', 'biểu đồ']],
+  [136, ['cheap', 'rẻ']],
+  [137, ['check', 'kiểm tra, séc']],
+  [138, ['cheese', 'phô mai']],
+  [139, ['chicken', 'gà, thịt gà']],
+  [140, ['child', 'đứa trẻ']],
+  [141, ['chocolate', 'sô cô la']],
+  [142, ['choose', 'chọn lựa']],
+  [143, ['cinema', 'rạp chiếu phim']],
+  [144, ['city', 'thành phố']],
+  [145, ['class', 'lớp học, hạng']],
+  [146, ['classroom', 'phòng học']],
+  [147, ['clean', 'sạch, lau chùi']],
+  [148, ['climb', 'leo trèo']],
+  [149, ['clock', 'đồng hồ']],
+  [150, ['close', 'đóng, gần']],
+  [151, ['clothes', 'quần áo']],
+  [152, ['club', 'câu lạc bộ']],
+  [153, ['coat', 'áo khoác']],
+  [154, ['coffee', 'cà phê']],
+  [155, ['cold', 'lạnh']],
+  [156, ['college', 'trường đại học']],
+  [157, ['colour', 'màu sắc']],
+  [158, ['come', 'đến']],
+  [159, ['common', 'phổ biến']],
+  [160, ['company', 'công ty']],
+  [161, ['compare', 'so sánh']],
+  [162, ['complete', 'hoàn thành, đầy đủ']],
+  [163, ['computer', 'máy tính']],
+  [164, ['concert', 'buổi hòa nhạc']],
+  [165, ['conversation', 'cuộc trò chuyện']],
+  [166, ['cook', 'nấu ăn']],
+  [167, ['cooking', 'việc nấu ăn']],
+  [168, ['cool', 'mát mẻ, ngầu']],
+  [169, ['correct', 'đúng, sửa chữa']],
+  [170, ['cost', 'giá cả, chi phí']],
+  [171, ['could', 'có thể (quá khứ của can)']],
+  [172, ['country', 'quốc gia, đất nước']],
+  [173, ['course', 'khóa học, tuyến đường']],
+  [174, ['cousin', 'anh chị em họ']],
+  [175, ['cow', 'con bò']],
+  [176, ['cream', 'kem (sữa), kem (trang điểm)']],
+  [177, ['create', 'tạo ra']],
+  [178, ['culture', 'văn hóa']],
+  [179, ['cup', 'tách, cốc']],
+  [180, ['customer', 'khách hàng']],
+  [181, ['cut', 'cắt, vết cắt']],
+  [182, ['dad', 'bố']],
+  [183, ['dance', 'nhảy, khiêu vũ']],
+  [184, ['dancer', 'vũ công']],
+  [185, ['dancing', 'sự khiêu vũ']],
+  [186, ['dangerous', 'nguy hiểm']],
+  [187, ['dark', 'tối, đen']],
+  [188, ['date', 'ngày, quả chà là']],
+  [189, ['daughter', 'con gái']],
+  [190, ['day', 'ngày']],
+  [191, ['dear', 'thân yêu, kính mến']],
+  [192, ['December', 'tháng Mười Hai']],
+  [193, ['decide', 'quyết định']],
+  [194, ['delicious', 'ngon']],
+  [195, ['describe', 'miêu tả']],
+  [196, ['description', 'sự miêu tả']],
+  [197, ['design', 'thiết kế']],
+  [198, ['desk', 'bàn làm việc']],
+  [199, ['detail', 'chi tiết']],
+  [200, ['dialogue', 'đối thoại']]
+]);
